@@ -1,0 +1,54 @@
+Meu primeiro sistema no Git
+
+Alteração para descrever melhor o sistema.
+
+Comandos:
+    git init - inicializa o git no diretório
+
+    git status - verifica as alterações 
+
+    git add -a - adiciona todos os arquivos do diretório ao git
+
+    git add *arq* -a - adicionada apenas o arquivo especificado
+
+    git commit -m "*mensagem"- faz o commit da adição com uma breve mensagem 
+
+    git log - lista todos os commits feitos naquela branch
+
+    git remote - exibe seus diretórios remotos
+        add *nome *rep_url - Cria o diretório remoto com o *nome diretamente para o *rep_url
+
+        get-url *nome - exibe a url vinculada ao *nome 
+
+        -v - quando se clona um rep de terceiros, usasse essa funcao para descobrir como foi nomeado o repositorio        
+
+    git reset --*mode *num_log:
+        -sof: desfaz o git commit e o git add, sem alterar os arquivos;
+
+        -mixed: não sei ...
+
+        -hard: desfaz todas as alterações, como se litaralmente fosse dado um ctrl+z nos arquivos;
+
+    git branch - lista todos os branchs do projeto e indica qual esta sendo usado no momento
+
+    git branch *nome* - cria novo branch com o *nome*
+
+    git branch -D *nome - deleta o branch *nome
+
+    git checkout *nome* - altera o branch para o *nome*
+
+    git diff - mostra quais alterações foram feitas nos arquivos desde o ultimo commit
+    
+    git diff --name-only - apresenta apenas os nomes dos arquivos modificados
+
+    git diff *arq* - mostra as alteraçoes feitas apenas no arquivo especificado.
+
+    git checkout HEAD *arq* -- reverte as alterações feitas no *arq* para o que era no ultimo commit
+
+    git revert --no-edit *codLog - similar ao git reset porem esse ele nao apaga o commit, deixando-o la para que voce possa corrigi-lo e commitar de novo
+    
+    git pull *origin master - atualisa o rep local a partir do que tem no rep remoto (origin)
+    
+    git clone *rep_url - clona projetos de terceiros para quie voce possa trabalhar em cima dele
+
+    gitignore - criar o arq de texto ".gitignore" e dentro dele especificar os CAMINHOS dos arquivos a serem ignorados pelo git.
